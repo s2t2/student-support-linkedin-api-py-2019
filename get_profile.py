@@ -5,6 +5,8 @@ import webbrowser
 
 load_dotenv()
 
+LINKEDIN_ACCESS_TOKEN = os.environ.get("LINKEDIN_ACCESS_TOKEN")
+
 def user_get_token():
     #
     # GET AN AUTH CODE
@@ -40,8 +42,15 @@ def user_get_token():
 
 if __name__ == "__main__":
 
-    token = user_get_token()
+    print("----------------")
+    print("GETTING TOKEN...")
+    if LINKEDIN_ACCESS_TOKEN:
+        token = LINKEDIN_ACCESS_TOKEN
+    else:
+        token = user_get_token()
     print(token) # store in environment variable!
-    app = linkedin.LinkedInApplication(token=token)
 
+    print("----------------")
+    print("INITIALIZING APP...")
+    app = linkedin.LinkedInApplication(token=token)
     print(type(app))
