@@ -25,3 +25,13 @@ Redirected to the new app's settings. Navigate to the "__" tab to locate credent
   + https://developer.linkedin.com/docs/guide/v2/jobs/recommended-jobs
 
 "The Recommended Jobs API returns jobs posted on LinkedIn that match the user’s profile. It exposes the same data as the section Jobs you may be interested in on Linkedin, and brings the benefits of LinkedIn’s job recommendation into your service."
+
+## LinkedIn Python Packages
+
+  + https://github.com/ozgur/python-linkedin looks really old, maybe incompatible with newer versions of python
+  + https://github.com/HootsuiteLabs/python-linkedin-v2 looks newer, although it appears it doesn't yet support job search capabilities?
+  + https://github.com/HootsuiteLabs/python-linkedin-v2/pull/4
+  + https://github.com/HootsuiteLabs/python-linkedin-v2#production-authentication
+
+
+Add Redirect URL of "http://localhost:8080/code"

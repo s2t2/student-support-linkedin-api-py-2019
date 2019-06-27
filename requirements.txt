@@ -1,0 +1,2 @@
+python-dotenv
+python-linkedin-v2
