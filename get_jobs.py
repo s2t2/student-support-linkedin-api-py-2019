@@ -36,7 +36,6 @@ if __name__ == "__main__":
 
     breakpoint()
 
-
     print("----------------")
     print("INITIALIZING APP...")
     client = linkedin.LinkedInApplication(token=token)
@@ -44,5 +43,5 @@ if __name__ == "__main__":
 
     print("----------------")
     print("GETTING RECOMMENDED JOBS...")
-    jobs = client._______()
-    pprint(jobs)
+    #jobs = client._______()
+    #pprint(jobs)

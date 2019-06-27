@@ -23,14 +23,12 @@ def user_get_token():
 
     auth = linkedin.LinkedInAuthentication(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL, PERMISSIONS)
     #print(type(auth)) #> <class 'linkedin_v2.linkedin.LinkedInAuthentication'>
-    #print(auth.authorization_url) # opening this url in the browser. seeing unauthorized_scope_error...
+    #print(auth.authorization_url)
 
     webbrowser.open_new(auth.authorization_url)
     # login, grant permissions, then you'll be redirected to a localhost url.
-    # ... observe the "code" parameter, and store in a variable called AUTH_CODE
+    # ... observe the "code" parameter, and enter it below
     # ... making sure to remove the "state" parameter part of the url, which might come at the end
-
-    ## or maybe just ask the user for it...
     auth_code = input("The auth code was:")
 
     auth.authorization_code = auth_code

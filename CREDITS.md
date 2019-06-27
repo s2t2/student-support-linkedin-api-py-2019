@@ -26,14 +26,30 @@ Redirected to the new app's settings. Navigate to the "__" tab to locate credent
 
 "The Recommended Jobs API returns jobs posted on LinkedIn that match the user’s profile. It exposes the same data as the section Jobs you may be interested in on Linkedin, and brings the benefits of LinkedIn’s job recommendation into your service."
 
+### Permissions
+
+  + https://stackoverflow.com/questions/53479131/unauthorized-scope-error-in-linkedin-oauth2-authentication
+
+Running into lots of permissions errors, not sure where to request to add the jobs permission. Why doesn't linkedin make this easier?
+
+  + https://docs.microsoft.com/en-us/linkedin/shared/authentication/permissions?context=linkedin/context
+
+Might not need member permissions, just app permissions to act on behalf of the app owner.
+
+
+How to get job recommendation permissions? Asking for help...
+
+  + https://github.com/HootsuiteLabs/python-linkedin-v2/pull/4#issuecomment-506221012
+  + https://stackoverflow.com/questions/56785824/linkedin-api-v2-how-to-get-permission-to-request-recommended-jobs
+
+### Authentication
+
+  + https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/context
+
+
 ## LinkedIn Python Packages
 
   + https://github.com/ozgur/python-linkedin looks really old, maybe incompatible with newer versions of python
   + https://github.com/HootsuiteLabs/python-linkedin-v2 looks newer, although it appears it doesn't yet support job search capabilities?
   + https://github.com/HootsuiteLabs/python-linkedin-v2/pull/4
   + https://github.com/HootsuiteLabs/python-linkedin-v2#production-authentication
-
-
-Seeing scopes error:
-
-  + https://stackoverflow.com/questions/53479131/unauthorized-scope-error-in-linkedin-oauth2-authentication
