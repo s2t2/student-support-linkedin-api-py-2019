@@ -34,4 +34,6 @@ Redirected to the new app's settings. Navigate to the "__" tab to locate credent
   + https://github.com/HootsuiteLabs/python-linkedin-v2#production-authentication
 
 
-Add Redirect URL of "http://localhost:8080/code"
+Seeing scopes error:
+
+  + https://stackoverflow.com/questions/53479131/unauthorized-scope-error-in-linkedin-oauth2-authentication
